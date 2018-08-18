@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+
+  #demo {
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: center;
+
+    #api-key-input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0px;
+      box-sizing: border-box;
+      border-radius: 2px;
+      border: 1px solid lightgray;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 0px;
+      margin-left: 10px;
+      padding: 10px;
+      background-color: lighten(green, 20);
+      box-shadow: 0px 4px 0px 0px lighten(green, 10);
+      font-family: sans-serif;
+      border-radius: 2px;
+      border-width: 0px;
+      vertical-align: top;
+      cursor: pointer;
+
+      &:active {
+        margin-top: 3px;
+        box-shadow: 0px 1px 0px 0px lighten(green, 10);
+      }
+    }
+
+    #marker.button {
+      background-color: lighten(red, 20);
+      box-shadow: 0px 4px 0px 0px lighten(red, 10);
+
+      &:active {
+        box-shadow: 0px 1px 0px 0px lighten(red, 10);
+      }
+    }
+
+    #map {
+      position: relative;
+      margin: 10px auto;
+      height: 250px;
+      width: 100%;
+      background-color: lightgray;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px lightgray;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: sans-serif;
+        font-size: 21px;
+        font-weight: bold;
+        white-space: nowrap;
+        color: gray;
+      }
+
+      &.noAPIKey::after {
+        content: "API key is missing";
+      }
+
+      &.loading::after {
+        content: "Loading...";
+      }
+    }
+  }
+}
