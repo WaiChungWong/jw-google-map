@@ -30,10 +30,10 @@ A react component for google map.
 
 ## Methods
 
-| Method         | Parameters                                                      | Description                                              |
-| -------------- | --------------------------------------------------------------- | -------------------------------------------------------- |
-| `getMapCenter` |                                                                 | retrieve the lat and long of the center of the map view. |
-| `setMarker`    | `position`: object consist of { `lat`: number, `lng`: number }. | set a marker on a given position of map.                 |
+| Method         | Parameters                                                          | Description                                              |
+| -------------- | ------------------------------------------------------------------- | -------------------------------------------------------- |
+| `getMapCenter` |                                                                     | retrieve the lat and long of the center of the map view. |
+| `setMarker`    | `position`: object consist of<br/>{ `lat`: number, `lng`: number }. | set a marker on a given position of map.                 |
 
 ## Props
 
