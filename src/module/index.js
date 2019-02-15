@@ -95,6 +95,7 @@ class GoogleMap extends Component {
 }
 
 GoogleMap.propTypes = {
+  className: PropTypes.string,
   center: PropTypes.shape({ lat: PropTypes.number, lng: PropTypes.number }),
   zoom: PropTypes.number
 };

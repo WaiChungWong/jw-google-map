@@ -33,7 +33,7 @@ class Demo extends Component {
         />
 
         <div className="button" onClick={() => setAPIKey(apiKey)}>
-          Set API
+          Set API Key
         </div>
         <div id="marker" className="button" onClick={() => this.setMarker()}>
           Set Marker

@@ -14,7 +14,7 @@ body {
       padding: 10px;
       margin: 20px 0px;
       box-sizing: border-box;
-      border-radius: 2px;
+      border-radius: 5px;
       border: 1px solid lightgray;
     }
 
@@ -22,11 +22,11 @@ body {
       display: inline-block;
       margin-top: 0px;
       margin-left: 10px;
-      padding: 10px;
+      padding: 10px 40px;
       background-color: lighten(green, 20);
       box-shadow: 0px 4px 0px 0px lighten(green, 10);
       font-family: sans-serif;
-      border-radius: 2px;
+      border-radius: 10px;
       border-width: 0px;
       vertical-align: top;
       cursor: pointer;
