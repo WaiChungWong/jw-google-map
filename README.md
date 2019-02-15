@@ -47,8 +47,7 @@ A react component for google map.
 ```javascript
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-
-import Map, { setAPIKey } from "./module";
+import Map, { setAPIKey } from "jw-google-map";
 
 import "./style.css";
 
